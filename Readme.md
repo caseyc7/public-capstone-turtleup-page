@@ -1,3 +1,12 @@
+# Table of Contents
+ - Product Description
+ - Team Members
+ - Technical Details
+ - - Frontend
+   - Backend
+   - Database
+ - App Beta Visuals/Demos
+ - Production Updates
 # Product Description
 
 TurtleUp is a non-profit dedicated to protecting marine life, specifically sea turtles that live on Ghana's coast.  Our team has been tasked with creating an IOS application that interfaces with physical tracking devices that will be placed on sea turtles in Ghana.  The hope is that people will be able to watch these turtles as they move through the sea, as well as be able to learn more about TurtleUp.  The app will include information on the company and their resources such as their newsletter.
