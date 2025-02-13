@@ -1,12 +1,12 @@
 # Table of Contents
- - [Product Description](https://github.com/UD-CPS491-25S/group-13-website.git)
- - [Team Members](https://github.com/UD-CPS491-25S/group-13-website.git)
- - [Technical Details](https://github.com/UD-CPS491-25S/group-13-website.git)
-   - [Frontend](https://github.com/UD-CPS491-25S/group-13-website.git)
-   - [Backend](https://github.com/UD-CPS491-25S/group-13-website.git)
-   - [Database](https://github.com/UD-CPS491-25S/group-13-website.git)
- - [App Beta Visuals/Demos](https://github.com/UD-CPS491-25S/group-13-website.git)
- - [Production Updates](https://github.com/UD-CPS491-25S/group-13-website.git)
+ - [Product Description](https://github.com/UD-CPS491-25S/group-13-website.git#product-description)
+ - [Team Members](https://github.com/UD-CPS491-25S/group-13-website.git#team-members)
+ - [Technical Details](https://github.com/UD-CPS491-25S/group-13-website.git#technical-details)
+   - [Frontend](https://github.com/UD-CPS491-25S/group-13-website.git#frontend)
+   - [Backend](https://github.com/UD-CPS491-25S/group-13-website.git#backend)
+   - [Database](https://github.com/UD-CPS491-25S/group-13-website.git#database)
+ - [App Beta Visuals/Demos](https://github.com/UD-CPS491-25S/group-13-website.git#app-beta-visualsdemos)
+ - [Production Updates](https://github.com/UD-CPS491-25S/group-13-website.git#production-updates)
 # Product Description
 
 TurtleUp is a non-profit dedicated to protecting marine life, specifically sea turtles that live on Ghana's coast.  Our team has been tasked with creating an IOS application that interfaces with physical tracking devices that will be placed on sea turtles in Ghana.  The hope is that people will be able to watch these turtles as they move through the sea, as well as be able to learn more about TurtleUp.  The app will include information on the company and their resources such as their newsletter.
