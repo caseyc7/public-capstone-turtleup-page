@@ -15,12 +15,10 @@ Firebase is the perfect database for real-time data updating.  This will be inte
 
 # App Beta Visuals/Demos:
 
-PUT PICS AND DEMO HERE
-Visual Demo Layout
-![App Visuals](./visual.png)
 
-React Frontend Demo
-![Demo Video](./VidDemo.mp4)
+Visual Demo Layout
+
+![App Visuals](./visual.png)
 
 
 # Production Updates
