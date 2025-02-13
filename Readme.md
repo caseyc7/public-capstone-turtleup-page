@@ -9,7 +9,7 @@
  - [Production Updates](https://github.com/UD-CPS491-25S/group-13-website.git#production-updates)
 
 # Link to Public Website
-[https://caseyc7.github.io/public-capstone-turtleup-page/]https://caseyc7.github.io/public-capstone-turtleup-page/
+https://caseyc7.github.io/public-capstone-turtleup-page/
 
 # Product Description
 
