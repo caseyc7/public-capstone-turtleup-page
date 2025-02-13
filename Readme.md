@@ -7,6 +7,10 @@
    - [Database](https://github.com/UD-CPS491-25S/group-13-website.git#database)
  - [App Beta Visuals/Demos](https://github.com/UD-CPS491-25S/group-13-website.git#app-beta-visualsdemos)
  - [Production Updates](https://github.com/UD-CPS491-25S/group-13-website.git#production-updates)
+
+# Link to Public Website
+[https://caseyc7.github.io/public-capstone-turtleup-page/]https://caseyc7.github.io/public-capstone-turtleup-page/
+
 # Product Description
 
 TurtleUp is a non-profit dedicated to protecting marine life, specifically sea turtles that live on Ghana's coast.  Our team has been tasked with creating an IOS application that interfaces with physical tracking devices that will be placed on sea turtles in Ghana.  The hope is that people will be able to watch these turtles as they move through the sea, as well as be able to learn more about TurtleUp.  The app will include information on the company and their resources such as their newsletter.
