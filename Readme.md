@@ -1,12 +1,12 @@
 # Table of Contents
- - [Product Description](https://github.com/UD-CPS491-25S/group-13-website.git#product-description)
- - [Team Members](https://github.com/UD-CPS491-25S/group-13-website.git#team-members)
- - [Technical Details](https://github.com/UD-CPS491-25S/group-13-website.git#technical-details)
-   - [Frontend](https://github.com/UD-CPS491-25S/group-13-website.git#frontend)
-   - [Backend](https://github.com/UD-CPS491-25S/group-13-website.git#backend)
-   - [Database](https://github.com/UD-CPS491-25S/group-13-website.git#database)
- - [App Beta Visuals/Demos](https://github.com/UD-CPS491-25S/group-13-website.git#app-beta-visualsdemos)
- - [Production Updates](https://github.com/UD-CPS491-25S/group-13-website.git#production-updates)
+ - [Product Description](#product-description)
+ - [Team Members](#team-members)
+ - [Technical Details](#technical-details)
+   - [Frontend](#frontend-react-native)
+   - [Backend](#backend-golang)
+   - [Database](#database-firebase)
+ - [App Beta Visuals/Demos](#app-beta-visualsdemos)
+ - [Production Updates](#production-updates)
 
 # Link to Public Website
 https://caseyc7.github.io/public-capstone-turtleup-page/
