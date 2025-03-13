@@ -1,40 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TurtleUp - Team</title>
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/team.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
 </head>
 <body>
     <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="team.html">Team</a>
-            <a href="demo.html">Demo</a>
-        </nav>
+        <div class="header-container">
+            <div class="logo">
+                <a href="https://turtleup.org/" target="_blank">
+                    <img src="images/header/tup.png" alt="TurtleUp Logo" class="logo-img">
+                </a>          
+            </div>
+
+            <div class="option-container">
+                <div class="options">
+                    <a href="index.html" class="button">
+                        <span class="option-text">Home</span>
+                    </a>
+                    <a href="team.html" class="button selected">
+                        <span class="option-text">About</span>
+                    </a>
+                    <a href="demo.html" class="button">
+                        <span class="option-text">Development</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="logo">
+                <a href="https://udayton.edu/" target="_blank">
+                    <img src="images/header/chapel-logo.jpg" alt="UD logo" class="logo-img">
+                </a>           
+            </div>
+        </div>
     </header>
-    <h1>Our Team</h1>
-    <section class="team">
-        <div class="team-member">
-            <img src="images/JackUher.jpg" alt="[Photo of Jack Uher]">
-            <h2>Jack Uher</h2>
-            <h3>Product Manager</h3>
+
+    <div class="main-content"> 
+        <h1>Our Team</h1>
+        <section class="team">
+            <div class="team-member">
+                <div class="team-member-header">
+                    <h2>Jack Uher</h2>
+                </div>
+                <div class="team-member-body">
+                    <img src="images/faces/JackUher.jpg" alt="Photo of Jack Uher">
+                    <h3>Product Manager</h3>
+                    <div class="team-member-email">uherj2@udayton.edu</div>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <div class="team-member-header">
+                    <h2>Luke Johnson</h2>
+                </div>
+                <div class="team-member-body">
+                    <img src="images/faces/LukeJohnson.jpg" alt="Photo of Luke Johnson">
+                    <h3>Database Developer</h3>
+                    <div class="team-member-email">johnsonl44@udayton.edu</div>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <div class="team-member-header">
+                    <h2>Connor Casey</h2>
+                </div>
+                <div class="team-member-body">
+                    <img src="images/faces/ConnorCasey.jpg" alt="Photo of Connor Casey">
+                    <h3>Backend Developer</h3>
+                    <div class="team-member-email">caseyc7@udayton.edu</div>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <div class="team-member-header">
+                    <h2>Cameron Sprague</h2>
+                </div>
+                <div class="team-member-body">
+                    <img src="images/faces/CameronSprague.jpg" alt="Photo of Cameron Sprague">
+                    <h3>Frontend Developer</h3>
+                    <div class="team-member-email">spraguec1@udayton.edu</div>
+                </div>
+            </div>
+        </section>
+        
+        <h1>About Us</h1>
+        <div class="about-section">
+            <p>
+                We're a group of computer science students from the University of Dayton. This website is an overview
+                of our senior capstone project. We are working with TurtleUp, a nonprofit based in Ghana, to develop a 
+                cross-platform mobile application that will allow users to interact with the TurtleUp brand in a more
+                unique way.
+            </p>
+            <p>
+                This app aims to integrate tracking features currently being developed by a team of engineering students
+                also here at the University of Dayton. The app will pull satellite tracking data about individual turtles
+                and display it to users in an intuitive and engaging manner.
+            </p>
+            <p>
+                We plan to complete a working prototype of this app by the end of the semester, as the satellite tracker is
+                still currently in development. Once that is complete, it is likely that another group of developers will be
+                focused on adding additional features and ensuring that our current base-design is compatible with the final version
+                of the tracker.
+            </p>
         </div>
-        <div class="team-member">
-            <img src="images/LukeJohnson.jpg" alt="[Photo of Luke Johnson]">
-            <h2>Luke Johnson</h2>
-            <h3>Database Developer</h3>
-        </div>
-        <div class="team-member">
-            <img src="images/ConnorCasey.jpg" alt="[Photo of Connor Casey]">
-            <h2>Connor Casey</h2>
-            <h3>Backend Developer</h3>
-        </div>
-        <div class="team-member">
-            <img src="images/CameronSprague.jpg" alt="[Photo of Cameron Sprague]">
-            <h2>Cameron Sprague</h2>
-            <h3>Frontend Developer</h3>
-        </div>
-    </section>
+    </div>
 </body>
 </html>

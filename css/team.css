@@ -1,34 +1,129 @@
-.team {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.team-member {
-    text-align: center;
-    margin: 10px;
-}
-
-.team-member img {
-    max-width: 150px;
-    max-height: 150px;
-    border-radius: 50%;
+:root {
+    --light-teal: #b4d9d4;
+    --orange: #ea8350;
+    --olive-green: #8c8a49;
+    --medium-teal: #67a59f;
+    --dark-green: #025f3e;
+    --gray: #7c7c7c;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+    color: black;
 }
 
-h1, h2 {
+.main-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
+    color: black;
+    margin: 25px 0 15px 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: black;
+    margin: 10px 0;
+    padding: 0;
 }
 
 h3 {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
+    margin: 10px 0 5px;
+    padding: 0;
+}
+
+p {
+    line-height: 1.4; 
+    margin: 0 0 20px 0;
+    padding: 0;
+    color: black;
+}
+
+.team {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 0 30px 0;
+}
+
+.team-member {
+    text-align: center;
+    margin: 0 0 30px 0;
+    width: 23%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.team-member-header {
+    background-color: var(--dark-green);
+    color: #fff;
+    padding: 10px;
+}
+
+.team-member-header h2 {
+    margin: 0;
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.team-member-body {
+    background-color: #fff;
+    padding: 15px;
+}
+
+.team-member img {
+    max-height: 150px;
+    width: auto;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.team-member-email {
+    color: var(--medium-teal);
+    font-size: 0.9rem;
+    margin: 5px 0 10px;
+    word-break: break-all;
+}
+
+/* About section styling */
+.about-section {
+    margin: 0 0 30px 0;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 1100px) {
+    .team-member {
+        width: 48%;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        width: 95%;
+    }
+    
+    .team-member {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }

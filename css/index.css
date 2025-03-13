@@ -1,18 +1,131 @@
-body {
-    font-family: 'Roboto', sans-serif;
+:root {
+    --light-teal: #b4d9d4;
+    --orange: #ea8350;
+    --olive-green: #8c8a49;
+    --medium-teal: #67a59f;
+    --dark-green: #025f3e;
+    --gray: #7c7c7c;
 }
 
-h1, h2 {
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+    color: black;
+}
+
+.main-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content-section {
+    width: 100%;
+    margin: 0 0 30px 0;
+}
+
+h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
+    color: black;
+    margin: 25px 0 15px 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: black;
+    margin: 10px 0;
+    padding: 0;
 }
 
 p {
-    max-width: 800px; 
-    padding: 0 10px 10px 10px;
-    line-height: 1.6; 
+    line-height: 1.4; 
+    margin: 0 0 10px 0;
+    padding: 0;
+    color: black;
+}
+
+/* Tech Stack Cards Styling */
+.tech-stack {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.tech-card {
+    margin: 0 0 30px 0;
+    width: 48%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.tech-card:hover {
+    transform: translateY(-5px);
+}
+
+.tech-card-header {
+    background-color: var(--dark-green);
+    color: #fff;
+    padding: 10px 15px;
+}
+
+.tech-card-header h2 {
+    margin: 0;
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 0;
+    border-radius: 0;
+}
+
+.tech-subtitle {
+    color: #b4b4b4;
+    font-size: 0.9rem;
+    margin-top: 2px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.tech-card-body {
+    background-color: #fff;
+    padding: 15px;
+}
+
+.tech-card-body p {
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+
+.tech-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.tech-image-container img {
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: contain;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 900px) {
+    .tech-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        width: 95%;
+    }
 }

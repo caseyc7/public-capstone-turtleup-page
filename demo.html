@@ -1,27 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TurtleUp - Development</title>
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/demo.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
 </head>
 <body>
     <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="team.html">Team</a>
-            <a href="demo.html">Demo</a>
-        </nav>
-    </header>
-    <h1>Current Prototype (Figma)</h1>
-    <section class="display-section">
-        <div class="display">
-            <img src="images/figma_demo.png" alt="[Figma Prototype]">
+        <div class="header-container">
+            <div class="logo">
+                <a href="https://turtleup.org/" target="_blank">
+                    <img src="images/header/tup.png" alt="TurtleUp Logo" class="logo-img">
+                </a>            
+            </div>
+
+            <div class="option-container">
+                <div class="options">
+                    <a href="index.html" class="button">
+                        <span class="option-text">Home</span>
+                    </a>
+                    <a href="team.html" class="button">
+                        <span class="option-text">About</span>
+                    </a>
+                    <a href="demo.html" class="button selected">
+                        <span class="option-text">Development</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="logo">
+                <a href="https://udayton.edu/" target="_blank">
+                    <img src="images/header/chapel-logo.jpg" alt="UD logo" class="logo-img">
+                </a>             
+            </div>
         </div>
+    </header>
+
+    <div class="main-content">
+        <h1>Development Process</h1>
         <p>
-            The current prototype built in Figma is a working idea of what our eventual app
-            will look like. It serves as a guide for developers in the inital stages as well as 
-            a reference for our clients so they understand what we will be making
+            Our application development follows an agile methodology with three planned sprints,
+            with the first sprint being devoted to planning and very early initial development work,
+            and the latter 2 being dedicated to full-on implementation
         </p>
-    </section>
+        
+        <!-- Sprint 1 Section -->
+        <div class="sprint-section">
+            <div class="sprint-header">
+                <h2>Sprint 1: Initial Planning and Use Case Requirements</h2>
+            </div>
+            <div class="sprint-content">
+                <div class="sprint-subsection">
+                    <h3>Initial Goal from Client</h3>
+                    <div class="content-with-image">
+                        <div class="text-content">
+                            <p>
+                                During our initial sprint, our client outlined their initial goals and plans for the project.
+                            </p>
+                            <ul>
+                                <li>Integrate the app with the tracker being built by a separate engineering team</li>
+                                <li>Allow users to view the location data for specific turtles in real time</li>
+                                <li>Integrate existing features from the TurtleUp webpage into the app (Shop, About/Info Page)</li>
+                            </ul>
+                            
+                            <p>
+                                Additionally, the client had requested an iOS and Android compatible version of the app. The original plan
+                                for this was to create 2 seperate teams, each creating their own version of the app. While this was intriguing
+                                from a learning perspective, as it would allow each team to devote their full attention to each aspect of the app
+                                in a full-stack capacity, it became clear this was unfeasable for multiple reasons.
+                            </p>
+                            <p>
+                                Working as 2 seperate entities would not only result in increased costs for the client (depending on the different
+                                design decisions that were made between teams), but would more than likely result in entirely different user experiences
+                                across platforms. To remedy this, we combined into a larger overall group, while still delegating individual tasks
+                                among our smaller groups. This allows us to work independently while also making sure that everyone understands the 
+                                use cases and requirements correctly. We believe that this process will allow to create a more desirable product
+                                for our client and the product's eventual users.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sprint-subsection">
+                    <h3>Technical Planning</h3>
+                    <p>
+                        As we decided to build a cross platform app, we decided on using React-Native to best fit our
+                        needs. Other options included Swift (iOS), Flutter, or Kotlin, but those options were either not
+                        suitable for our needs, or not well supported.
+                    </p>
+                    <p>
+                        Using React-Native presented some challenges at first, but we were able to adapt. Some of these include:
+                    </p>
+                    <ul>
+                        <li>Understanding the basic structure of react based apps</li>
+                        <li>Knowing the strengths and limitations of certain features across platforms</li>
+                        <li>Understanding how to integrate with our planned backend implementation</li>
+                    </ul>
+                    <p>
+                        On the backend side of development, we opted to use Firebase from Google Cloud as our Database.
+                        The main advantage of this was that Firebase was well-suited for real-time updates, which our app
+                        was going to require as one of its main features. 
+                    </p>
+                    <p>
+                        Along with this, we planned to write our backend in Golang, focusing on future stability and
+                        speed, ensuring the app remains quick and easy to develop once we are no longer working on it.
+                    </p>
+                </div>
+                
+                <div class="sprint-subsection">
+                    <h3>Achievements & Challenges</h3>
+                    <div class="content-with-image image-right">
+                        <div class="image-container">
+                            <img src="images/sprints/figma_demo.png" alt="Sprint 1 Demo">
+                            <div class="caption">Initial prototype built in Figma</div>
+                        </div>
+                        <div class="text-content">
+                            <p>
+                                By the end of sprint 1, we had successfully built a mock-prototype for the app in Figma. 
+                                We presented this to our client and she was happy with the design, albiet with a few suggestions.
+                                Our next steps were to begin implementing this Figma design inside of react-native.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Sprint 2 Section -->
+        <div class="sprint-section">
+            <div class="sprint-header">
+                <h2>Sprint 2: Prototype Implementation</h2>
+            </div>
+            <div class="sprint-content">
+                <div class="sprint-subsection">
+                    <h3>Goals and Planning</h3>
+                    <p>
+                        Our second sprint was focused on implementing our initial figma design into an actual app.
+                        To do this, we created a shared GitHub repo between the 8 of us that contained our frontend,
+                        along with another for our backend. Initial setup involved setting up firebase configs and correctly
+                        structuring our react-native project. Once this was complete, we were able to start delegating tasks.
+                    </p>
+                </div>
+                
+                <div class="sprint-subsection">
+                    <h3>Sprint 2 Progress</h3>
+                    <div class="content-with-image">
+                        <div class="text-content">
+                            <p>
+                                During Sprint 2, we were able to implement/begin implementing the following features
+                            </p>
+                            <ul>
+                                <li>A working map page that pulls turtle location data from the database</li>
+                                <li>A home screen which displays general information about different turtles in a list format</li>
+                                <li>A script to simulate live transmitted satellite information to test real-time updates</li>
+                                <li>A shop page that allows the user to select (and eventually puchase) items from the TurtleUp store</li>
+                                <li>Replicated general company information from the website into app to be easily accessed by the user</li>
+                                <li>In-app integration for blog posts and podcast listings from the TurtleUp website and YouTube channel</li>
+                            </ul>
+                        </div>
+                        <div class="image-container">
+                            <img src="images/sprints/sprint2-app.png" alt="Sprint 2 Development">
+                            <div class="caption">Current state of the app after Sprint 2</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sprint-subsection">
+                    <h3>Our Contributions</h3>
+                    <p>
+                        During Sprint 2, we were able to implement all of the features listed above as a larger group.
+                        As a smaller group, however, we were tasked with building the home page, sign in page, and parts
+                        of the info/about page.
+                    </p>
+                    <h4>Home Page</h4>
+                    <div class="content-with-image">
+                        <div class="text-content">
+                            <p>
+                                The main goal with the home page was to display all of the turtles we stored in our DB in
+                                an intuitive manner. The way we decided to design this was to format each turtle document from
+                                Firebase into its own "card" that contained all/most of the information contained in the schema.
+                            </p>
+                            <p> 
+                                We also wanted to make the page somewhat interactive, so we decided on adding a "My Turtles" and
+                                "Explore Turtles" tab at the top of the page. The Explore tab would display all turtles to any user, 
+                                and the My Turtles tab would display only turtles that are connected to the user. While it has not yet
+                                been decided how turtles will be connected to users from a business perspective, our next steps for this
+                                page will be actually filtering turtles based on the currently logged in user.
+                            </p>
+                            <p> 
+                                Lastly, icons were added that represent a photo and a map. The photo icon loads an image (specific
+                                to the turtle you are currently selecting) from a Firebase storage bucket, and displays it to the user.
+                                The next step for this function will be to cache the photos on device to prevent too many reads to the bucket
+                                itself. The map icon currently redirects the user to the map page. The next steps for this feature will be
+                                to display the selected turtle's location data on screen after being redirected.
+                            </p>
+                        </div>
+                        <div class="image-container">
+                            <img src="images/sprints/home.png" alt="Sprint 2 Development of Home Page">
+                            <div class="caption">Current state of the Home Page after Sprint 2</div>
+                        </div>
+                    </div>
+                    <h4>Sign Up Page</h4>
+                    <div class="content-with-image">
+                        <div class="text-content">
+                            <p>
+                                The main challenge with the home page was understanding home Firebase handles User Auth.
+                                Becuase the service already has its own built in way to handle authentication, we decided to use 
+                                this feature for out own app. Once we understood how to use the packages Firebase provides for
+                                working with react-native, most of the work came down to styling and making the page look visually
+                                appealing
+                            </p>
+                            <p>
+                                There was some communication that had to occur between both sides of the larger group. Most of this
+                                happened due to resolving issues connecting the signup and login process, as well as understanding
+                                how to use oAuth for allow for signing in with Google, which ultimately presented some issues with cost
+                                and cross-compatability.
+                            </p>
+                        </div>
+                        <div class="image-container">
+                            <img src="images/sprints/signup.png" alt="Sprint 2 Development of Home Page">
+                            <div class="caption">Current state of the Signup Page after Sprint 2</div>
+                        </div>
+                    </div>
+                    <h4>About Page</h4>
+                    <div class="content-with-image">
+                        <div class="text-content">
+                            <p>
+                                The about page was split up between teams. For our part of the About page, we 
+                                pulled existing information and media from TurtleUp's webiste to create the 
+                                "Our Mission" and "Our Founder" tabs. This pages duplicate information that is already
+                                found on the website, but formats it in a way that is more accessible for mobile apps
+                                while making the info easier to access, especially as the user is already on the app.
+                            </p>
+                        </div>
+                        <div class="image-container">
+                            <img src="images/sprints/about.png" alt="Sprint 2 Development of Home Page">
+                            <div class="caption">Current state of the About Page after Sprint 2</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Sprint 3 Section -->
+        <div class="sprint-section">
+            <div class="sprint-header">
+                <h2>Sprint 3: Polish & Final Features</h2>
+            </div>
+            <div class="sprint-content">
+                <div class="sprint-subsection">
+                    <h3>Upcoming Goals</h3>
+                    <p>
+                        Our final sprint will focus on polishing the application, implementing remaining features,
+                        and preparing for deployment. Key objectives will include comprehensive testing, performance
+                        optimization, and finalizing the integration with the tracking hardware.
+                    </p>
+                </div>
+                
+                <div class="sprint-subsection">
+                    <h3>Planned Features</h3>
+                    <ul>
+                        <li>Educational content about sea turtles and conservation efforts</li>
+                        <li>Integration with payment systems for donations</li>
+                        <li>Social sharing capabilities</li>
+                        <li>Analytics dashboard for TurtleUp administrators</li>
+                        <li>Final UI refinements and animations</li>
+                    </ul>
+                </div>
+                
+                <div class="sprint-subsection">
+                    <h3>Launch Preparation</h3>
+                    <p>
+                        We will conduct comprehensive testing across multiple devices and prepare the
+                        application for submission to the App Store and Google Play. Documentation for
+                        future maintenance and development will also be completed during this sprint.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+</html>
