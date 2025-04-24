@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/demo.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
     <header>
@@ -34,7 +36,7 @@
             <div class="logo">
                 <a href="https://udayton.edu/" target="_blank">
                     <img src="images/header/chapel-logo.jpg" alt="UD logo" class="logo-img">
-                </a>             
+                </a>            
             </div>
         </div>
     </header>
@@ -248,9 +250,202 @@
         <!-- Sprint 3 Section -->
         <div class="sprint-section">
             <div class="sprint-header">
-                <h2>Sprint 3: COMING SOON</h2>
+                <h2>Sprint 3: Enhancements and Features</h2>
             </div>
-        </div>
+            <div class="sprint-content">
+                <div class="sprint-subsection">
+                    <h3>Goals and Planning</h3>
+                    <p>
+                        At the conclusion of our second sprint, we had the impression that our overall product reached
+                        the base standards that we expected for ourselves. We had implemented a MVP and even gone slightly
+                        beyond that. Sprint 3 was focused on enhancing already created features and developing new features
+                        that would allow for future development and a more advanced user experience.
+                    </p>
+                </div>
+                
+                <div class="sprint-subsection">
+                    <h3>Sprint 3 Progress</h3>
+                    <div class="content-with-image">
+                        <div class="text-content">
+                            <p>
+                                During Sprint 3, we were able to improve and implement the following features:
+                            </p>
+                            <ul>
+                                <li>An admin page that will allow for future TurtleUp employees to manage the app without accessing code</li>
+                                <li>Added features to the home page that link specific turtle cards to pins on the map</li>
+                                <li>An enhanced about page that contains more detailed information about the company, like social media handles</li>
+                                <li>Integration with a pre-existing mailchip service to allow to Newsletter signup directly in our app</li>
+                                <li>Various behind-the-scenes improvements to enhance performance and general good coding practices</li>
+                            </ul>
+                        </div>
+                        <div class="gif-gallery-container">
+                            <div class="gif-gallery">
+                                <div class="gif-item">
+                                    <img src="images/sprints/info-page.gif" alt="Info page">
+                                    <div class="caption">Info page w/ social media hyperlinks</div>
+                                </div>
+                                <div class="gif-item">
+                                    <img src="images/sprints/admin.gif" alt="Admin page">
+                                    <div class="caption">New admin page for managing turtles in DB</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sprint-subsection">
+                    <h3>Our Contributions</h3>
+                    <p>
+                        The below sections go more in depth on the features that we implemented this sprint.
+                    </p>
+                    <h4>Home Page</h4>
+                    <div class="content-with-image">
+                        <div class="text-content">
+                            <p>
+                                The home page was in a good spot at the end of sprint 2. The main features we wanted to implement were the ability
+                                to link specific turtles cards to a map-page redirect. More specifically, selecting a turtle's 
+                                <ion-icon name="map"></ion-icon> icon would take the user to that particular turtle on the map page,
+                                making it easier to locate each turtle on the map.
+                            </p>
+                            <p> 
+                                Last sprint, we did not get around to fully implementing the "My Turtles" feature, which somewhat existed,
+                                but was still mostly hard-coded into the app. This sprint, with the help of Team 13, we were able to implement the ability to "like"
+                                specific turtles that would appear in a users "My Turtles" section as long as they were logged in. Team 13 also aided in
+                                allowing for QR code scans to like turtles, allowing the users 2 options for using this feature (pressing <ion-icon name="heart"></ion-icon>
+                                or scanning a QR code).
+                            </p>
+                        </div>
+                        <div class="gif-gallery-container">
+                            <div class="gif-gallery">
+                                <div class="gif-item">
+                                    <img src="images/sprints/home-page.gif" alt="Home page">
+                                    <div class="caption">Home page allows for 'liking' turtles</div>
+                                </div>
+                                <div class="gif-item">
+                                    <img src="images/sprints/home-map.gif" alt="Home page">
+                                    <div class="caption">Home page redirect to map page</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h4>Sign Up Page (Newsletter Implementation)</h4>
+                    <div class="content-with-image">
+                        <div class="text-content">
+                            <p>
+                                The signup page was mostly implemented last sprint, with the only feature missing was connecting the
+                                newsletter signup checkbox to an actual api endpoint. This sprint, we spent time talking with our client to
+                                learn about their current newsletter signup implementation and how it works.
+                            </p>
+                            <p>
+                                After learning that TurtleUp is using mailchimp, we began implementing an API route that would allow us to
+                                connect to TurtleUp's already existing mailchip service. This way, a user could opt to sign up for the newsletter
+                                directly in the app. This posed challenges in learning how to set up an API to an external service other than our DB,
+                                which had already been set up. However, we were able to perform testing with a seperate Mailchimp account and eventually
+                                connect that to the real mailchimp service once that was fully working. We also added fields to the sign-up page
+                                for first and last name to allow for personalized newsletters.
+                            </p>
+                        </div>
+                        <div class="gif-gallery-container">
+                            <div class="gif-gallery">
+                                <div class="gif-item">
+                                    <img src="images/sprints/new-signup.png" alt="New Signup Page">
+                                    <div class="caption">Singup page with added name fields</div>
+                                </div>
+                                <div class="gif-item">
+                                    <img src="images/sprints/signup.png" alt="Admin page">
+                                    <div class="caption">Previous iteration of signup page</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h4>About Page</h4>
+                    <div class="content-with-image">
+                        <div class="text-content">
+                            <p>
+                                The changes made to the about page for this sprint were mostly about ease-of-use and 
+                                quality of life. The main feature implmented here was hyper-links to each of TurtleUp's 
+                                social media platforms. These include Instagram, TikTok, LinkedIn, Facebook, Youtube, and
+                                the social media platform formerly known as Twitter.
+                            </p>
+                            <p>
+                                We also spent a considerable amount of time conforming the about page, along with the rest
+                                of the app, to TurtleUp's brand kit specifications. Most notably in regards to color, which
+                                we were finally able to confidently specify as <span style="color: #ea8350; font-weight: bold;">Hex Code #ea8350</span>
+                            </p>
+                        </div>
+                        <div class="gif-gallery-container">
+                            <div class="gif-gallery">
+                                <div class="gif-item">
+                                    <img src="images/sprints/info-page.gif" alt="Info page with links">
+                                    <div class="caption">Info page with socials links</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h4>Additional Contributions</h4>
+                    <div class="sprint-subsection">
+                        <p>
+                            Along with the above features, we completed some smaller code re-factors meant to enhance
+                            user experience and future expansion of the app. One of these was allowing the products stored in
+                            our shop page to be pulled directly from our DB. Previously, we had products statically stored in 
+                            the assets folder of our app. Now, we have a schema in firebase that links to photos stored in a 
+                            google cloud storage bucket. This will allow for future products to be easily added and removed. 
+                        </p>
+                        <p>
+                            When this was first implemented, there were issues with requests being sent to firebase for a new collection
+                            of images even when all of those images had been read and downloaded already, resulting in redundant requests
+                            that could eventually lead to excess costs and storage issues. Now, the images are grabbed when the page is 
+                            initally loaded and only re-downloaded in the user leaves and re-enters the page.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>   
+        <div class="sprint-section">
+            <div class="sprint-header">
+                <h2>Overall Project Takeaways</h2>
+            </div>
+            <div class="sprint-content">
+                <div class="sprint-subsection">
+                    <h3>Overall</h3>
+                    <p>
+                        We felt that working with TurtleUp was an incredibly rewarding experience. Being given the opportunity
+                        to build an app of this magnitude was a significant challenge that we believed prepared us for future 
+                        projects and challenges we may encounter
+                    </p>
+                    <h4>Future Considerations</h4>
+                    <div class="text-content">
+                        <p>
+                            There were some things we could have done differently, but we largely believe that the way we tackled the project 
+                            was well thought out considering our experience with these technologies and platforms at the time of the project beginning.
+                            One thing in particular that we could have tackled differently was completing documentation along the way.
+                            Specifically, creating documentation for new features as we created them. We always knew this was going to be a project
+                            that would be passed on to future capstone groups, so documentation has always been a necessity, and creating the documentation
+                            early on would have caused less headaches at the end of the project while attempting to rememeber everything we did.
+                        </p>
+                    </div>
+                    <h4>Closing Thoughts</h4>
+                    <div class="text-content">
+                        <p>
+                            As this app gets passed down to future groups, it will be interesting to see how they begin to tackle challenges like
+                            itegration with a real satellite tracker, which has always been the end goal for this project. While we did not get to take this
+                            on ourselves, we feel confident that we left the project in a good enough spot that future features can be (relatively) easily implemented.
+                        </p>
+                        <p>
+                            We are grateful for the experience this project has provided us, and thank Corinne Brion, our client and the founder of TurtleUp,
+                            for the support and aid she has provided us, along with any other TurtleUp employees that aided us in the project. Finally, we also thank 
+                            our Professor for this semester of Capstone, Lacie Stiffler, for the guidance she provided us during this semester and project. 
+                        </p>
+                        <p>
+                            Thank you,
+                        </p>
+                        <p>
+                            Cameron, Connor, Jack, and Luke.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>   
     </div>
 </body>
 </html>

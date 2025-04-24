@@ -160,6 +160,35 @@ p {
     margin-bottom: 5px;
 }
 
+/* GIF Gallery Styling */
+.gif-gallery-container {
+    margin-top: 20px; /* Add space above gallery on mobile */
+}
+
+.gif-gallery {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: space-around; /* Distribute space evenly */
+    gap: 20px; /* Add space between GIFs */
+}
+
+.gif-item {
+    flex: 1 1 calc(50% - 20px); /* Two items per row */
+    max-width: calc(50% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.gif-item img {
+    width: 100%; /* Make image fill container */
+    max-width: 180px; /* Limit max size */
+    height: auto;
+    border: 1px solid var(--light-teal);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-bottom: 5px;
+}
+
 /* Responsive adjustments */
 @media (min-width: 768px) {
     .content-with-image {
@@ -179,14 +208,28 @@ p {
     .content-with-image.image-right .image-container {
         margin: 0 0 0 20px;
     }
-    
+
+    .gif-gallery-container {
+        flex: 0 0 45%; /* Adjust width as needed */
+        margin: 0 0 0 20px; /* Space between text and gallery */
+        margin-top: 0; /* Reset mobile margin */
+    }
+
     .text-content {
         flex: 1;
-        margin-right: 20px;
+        margin-right: 0; /* Remove previous margin */
+    }
+
+    /* Adjustments for smaller desktop screens if needed */
+    @media (max-width: 1024px) {
+        .gif-item {
+            flex: 1 1 calc(50% - 8px);
+            max-width: calc(50% - 8px);
+        }
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) { /* Adjusted breakpoint */
     .main-content {
         width: 95%;
     }
@@ -197,5 +240,21 @@ p {
     
     .sprint-content {
         padding: 15px;
+    }
+
+    .gif-item {
+        flex: 1 1 calc(50% - 8px); /* Two items per row on smaller screens */
+        max-width: calc(50% - 8px);
+    }
+
+    .gif-item img {
+        max-width: 100%; /* Allow slightly larger gifs on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .gif-item {
+        flex: 1 1 100%; /* One item per row on very small screens */
+        max-width: 100%;
     }
 }
